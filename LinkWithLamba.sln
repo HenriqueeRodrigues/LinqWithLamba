@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkWithLamba", "LinkWithLamba\LinkWithLamba.csproj", "{FCB3816C-10EA-4F33-A9C9-A5424018F7B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB3816C-10EA-4F33-A9C9-A5424018F7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB3816C-10EA-4F33-A9C9-A5424018F7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB3816C-10EA-4F33-A9C9-A5424018F7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB3816C-10EA-4F33-A9C9-A5424018F7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F7FAC96-B3ED-49EA-8712-6A4DD471B39B}
+	EndGlobalSection
+EndGlobal
