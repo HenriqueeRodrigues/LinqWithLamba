@@ -8,7 +8,7 @@ namespace LinqWithLamba
     {
         static void Main(string[] args)
         {
-            ITest test = new TestFirst();
+            ITest test = new TestJoin();
             test.Test();
 
             Console.ReadLine();
