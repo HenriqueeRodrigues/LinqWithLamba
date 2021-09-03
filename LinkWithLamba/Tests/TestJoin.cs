@@ -40,21 +40,23 @@ namespace LinkWithLamba.Tests
 
 
             //    }
-
+             
             var customerOrders = customers.GroupJoin(
                  orders,
                  customer => customer.Id,
-                 orders => orders.CustomerId,
-                 (customerOrders, order) => new { Customer = customerOrders, Order = order });
-                 //(customerOrders, order) => new { Name = customerOrders.Name, TotalValue = order.TotalValue, CreateDate = order.CreatedDate }); // Só o que eu quero, o que eu instanciei 
+                 order => order.CustomerId,
+                 (customer, allOrders) => new { Customer = customer, AllOrders = allOrders });
 
-            foreach(var customerOrder in customerOrders)
+            foreach (var customerOrder in customerOrders)
             {
-                //Console.WriteLine("The Customer " + customerOrder.Customer.Name + " purchased " + customerOrder.Order.TotalValue.ToString() + " in " + customerOrder.Order.CreatedDate.ToString("dd/MM/yyyy"));
-                Console.WriteLine("The Customer " + customerOrder.Name + " purchased " + customerOrder.TotalValue.ToString() + " in " + customerOrder.CreateDate.ToString("dd/MM/yyyy"));
+                Console.WriteLine("The Customer " + customerOrder.Customer.Name + " purchased : ");
 
-
-        //    }
+                foreach(var order in customerOrder.AllOrders)
+                {
+                    Console.WriteLine("Total Value: " + order.TotalValue.ToString("c2") + " in " + order.CreatedDate.ToString("dd/MM/yyyy"));
+                }
+            }
+        }
     }
 }
-}
+
