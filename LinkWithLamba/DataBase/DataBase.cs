@@ -25,7 +25,7 @@ namespace LinqWithLamba.DataBase
             return customers;
         }
 
-        public static List<Order> GeOrders()
+        public static List<Order> GetOrders()
         {
             var orders = new List<Order>();
             var customerId = 0;

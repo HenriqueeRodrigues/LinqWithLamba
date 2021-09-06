@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkWithLamba.Tests
+namespace LinqWithLamba.Tests
 {
     public class TestFirst : ITest
     {
         public void Test()
         {
-            var customers = DataBase.GetCustomers();
+            var customers = DataBase.DataBase.GetCustomers();
 
             // var fisrtCustomers = customers.First();
             // Console.WriteLine(fisrtCustomers.Name);

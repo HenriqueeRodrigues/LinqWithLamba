@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkWithLamba.Tests
+namespace LinqWithLamba.Tests
 {
     public class TestLast
     {
         public void Test()
         {
-            var customers = DataBase.GetCustomers();
+            var customers = DataBase.DataBase.GetCustomers();
 
             var lastCustomer = customers.Last();
 

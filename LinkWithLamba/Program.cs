@@ -1,5 +1,4 @@
 ﻿using System;
-using LinkWithLamba.Tests;
 using LinqWithLamba.Tests;
 
 namespace LinqWithLamba
@@ -8,7 +7,7 @@ namespace LinqWithLamba
     {
         static void Main(string[] args)
         {
-            ITest test = new TestSelectMany();
+            ITest test = new TestOrderBy();
             test.Test();
 
             Console.ReadLine();

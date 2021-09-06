@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkWithLamba.Tests
+namespace LinqWithLamba.Tests
 {
     public class TestSelect : ITest
     {
         public void Test()
         {
-            var customers = DataBase.GetCustomers();
+            var customers = DataBase.DataBase.GetCustomers();
 
             var fisrtQueryCustomers = from customer in customers
                                       //select new { customer.Name }; se torna uma lista de string com apenas um item

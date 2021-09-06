@@ -6,14 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkWithLamba.Tests
+namespace LinqWithLamba.Tests
 {
     public class TestJoin : ITest
     {
         public void Test()
         {
-            var customers = DataBase.GetCustomers();
-            var orders = DataBase.GeOrders();
+            var customers = DataBase.DataBase.GetCustomers();
+            var orders = DataBase.DataBase.GetOrders();
 
             //    //foreach(var customer in customers)
             //    //{

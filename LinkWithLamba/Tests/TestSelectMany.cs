@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LinkWithLamba.Tests
+namespace LinqWithLamba.Tests
 {
     public class TestSelectMany : ITest
     {
@@ -29,12 +29,20 @@ namespace LinkWithLamba.Tests
 
             var personPhones = persons.Select(person => person.PersonPhones);
 
-            foreach(var personPhone in personPhones)
+            foreach (var personPhone in personPhones) ////Isso aquie é sem o SelectMany
             {
-                foreach(var phone in personPhone)
+                foreach (var phone in personPhone)
                 {
                     Console.WriteLine("Using Select: " + phone.PhoneNumber);
                 }
+            }
+
+            var phones = persons.SelectMany(person => person.PersonPhones);
+
+            foreach (var phone in phones)
+            {
+                Console.WriteLine("Using SelectMany: " + phone.PhoneNumber);
+
             }
         }
 
