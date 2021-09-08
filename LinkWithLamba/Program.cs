@@ -7,7 +7,7 @@ namespace LinqWithLamba
     {
         static void Main(string[] args)
         {
-            ITest test = new TestWhere();
+            ITest test = new TestAll();
             test.Test();
 
             Console.ReadLine();
