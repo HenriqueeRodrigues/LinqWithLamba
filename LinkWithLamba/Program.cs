@@ -7,7 +7,7 @@ namespace LinqWithLamba
     {
         static void Main(string[] args)
         {
-            ITest test = new TestAll();
+            ITest test = new TestUnion();
             test.Test();
 
             Console.ReadLine();
